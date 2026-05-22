@@ -1073,7 +1073,7 @@ fn handle_custom_input_key(
     match key.code {
         KeyCode::Esc => {
             app.custom_input = None;
-            app.log_action("custom source edit cancelled");
+            app.log_action("custom source edit canceled");
         }
         KeyCode::Enter => {
             let source = app.custom_input.take().unwrap_or_default();
